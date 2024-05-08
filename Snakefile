@@ -59,7 +59,7 @@ rule imputation_prep:
         outdir = "results/imputation_prep",
     shell:
         """
-        HRC-1000G-check-bim-NoReadKey.pl --bim {input.bim} --frequency {input.frq} --ref {input.reference_1000g} --1000g --output {params.outdir} --verbose --noexclude
+        scripts/raynor_imputation_prep/HRC-1000G-check-bim-NoReadKey.pl --bim {input.bim} --frequency {input.frq} --ref {input.reference_1000g} --1000g --output {params.outdir} --verbose --noexclude
         grep -v '^rm' {params.outdir}/Run-plink.sh | sed 's/--recode vcf/--recode vcf-iid/g'> {params.outdir}/Run-plink_fix.sh
         bash {params.outdir}/Run-plink_fix.sh
         """
@@ -81,7 +81,7 @@ rule zip_and_index:
 rule filter_1000g:
     input:
         vcf_array = "results/imputation_prep/formatted-updated-chr{chr}.vcf.gz",
-        vcf_1000g = "/lab/data/genomes/human/hg19/1000GenomesDownloads/ALL.chr{chr}.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz",
+        vcf_1000g = lambda wildcards: config["KGref_hg19"][wildcards.chr],
     output:
         vcf = "results/imputation_prep/1000g_bctfools_isec_chr{chr}/0001.vcf.gz",
         tbi = "results/imputation_prep/1000g_bctfools_isec_chr{chr}/0001.vcf.gz.tbi",

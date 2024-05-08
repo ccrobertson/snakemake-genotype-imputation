@@ -1,3 +1,28 @@
 
 tis_token: <provide token from TOPMed Imputation Server>
 mis_token: <provide token from Michigan Imputation Server>
+
+KGref_hg19:
+  chr10:<path_to_files>/ALL.chr10.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr11:<path_to_files>/ALL.chr11.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr12:<path_to_files>/ALL.chr12.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr13:<path_to_files>/ALL.chr13.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr14:<path_to_files>/ALL.chr14.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr15:<path_to_files>/ALL.chr15.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr16:<path_to_files>/ALL.chr16.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr17:<path_to_files>/ALL.chr17.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr18:<path_to_files>/ALL.chr18.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr19:<path_to_files>/ALL.chr19.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr1:<path_to_files>/ALL.chr1.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr20:<path_to_files>/ALL.chr20.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr21:<path_to_files>/ALL.chr21.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr22:<path_to_files>/ALL.chr22.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr2:<path_to_files>/ALL.chr2.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr3:<path_to_files>/ALL.chr3.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr4:<path_to_files>/ALL.chr4.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr5:<path_to_files>/ALL.chr5.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr6:<path_to_files>/ALL.chr6.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr7:<path_to_files>/ALL.chr7.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr8:<path_to_files>/ALL.chr8.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+  chr9:<path_to_files>/ALL.chr9.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
+
