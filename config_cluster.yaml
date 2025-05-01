@@ -1,0 +1,13 @@
+__default__:
+  mem: "10G"
+  cpus: "1"
+  ntasks: "1"
+  name: "JOBNAME.{rule}.{wildcards}"
+  output: "logs/smk.{rule}.{wildcards}.out"
+  time: "24:00:00"
+  partition: "standard"
+  account: "scjp1"
+
+
+align:
+  mem: "60G"

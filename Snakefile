@@ -4,7 +4,7 @@
 configfile: "config.yaml"
 configfile: "token.yaml"
 CHROMOSOMES = list(range(1,23))
-CHROMOSOMES.append("X")
+#CHROMOSOMES.append("X")
 
 def get_1000g_file(chr):
     return config["KGref_hg19"]["chr"+chr]
@@ -73,10 +73,10 @@ rule align:
     input:
         bim = "results/imputation_prep/clean.bim",
         frq = "results/imputation_prep/clean.frq",
-        reference_1000g = "resources/1000GP_Phase3_combined.legend"
+        reference_1000g = config["KGref_legend"],
     output:
         "results/imputation_prep/clean-updated.bim",
-        expand("results/imputation_prep/clean-updated-chr{chr}.vcf", chr=range(1,24))
+        expand("results/imputation_prep/clean-updated-chr{chr}.vcf", chr=CHROMOSOMES)
     params:
         outdir = "results/imputation_prep",
     shell:

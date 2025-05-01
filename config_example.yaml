@@ -1,7 +1,7 @@
 
 tis_token: <provide token from TOPMed Imputation Server>
 mis_token: <provide token from Michigan Imputation Server>
-
+KGref_legend: /scratch/scjp_root/scjp0/ccrober/reference/1000GP_Phase3_combined.legend 
 KGref_hg19:
   chr10:<path_to_files>/ALL.chr10.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
   chr11:<path_to_files>/ALL.chr11.phase3_shapeit2_mvncall_integrated_v5.20130502.genotypes.vcf.gz
